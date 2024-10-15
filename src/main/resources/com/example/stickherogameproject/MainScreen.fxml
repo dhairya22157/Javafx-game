@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="306.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stickherogameproject.HelloController">
+   <children>
+      <ImageView fx:id="Start" fitHeight="307.0" fitWidth="461.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FirstScreen.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="272.0" layoutY="208.0" mnemonicParsing="false" onAction="#switchToScene2" style="-fx-background-color: #90EE90;" text="START" textFill="#308d58">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="337.0" layoutY="208.0" mnemonicParsing="false" onAction="#ResumeGame" style="-fx-background-color: #90EE90;" text="RESUME" textFill="#308d58">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="412.0" layoutY="205.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="25.33" prefWidth="28.0" style="-fx-background-color: #90EE90;" text="?" textFill="#0ec975">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

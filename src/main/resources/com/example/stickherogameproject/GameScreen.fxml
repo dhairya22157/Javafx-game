@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="307.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stickherogameproject.HelloController">
+   <children>
+      <ImageView fx:id="background" fitHeight="307.0" fitWidth="457.0" layoutX="1.0" onMousePressed="#handleMousePressed" onMouseReleased="#handleMouseReleased" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Screen1.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Character" fitHeight="31.0" fitWidth="35.0" layoutX="102.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Character.png" />
+         </image>
+      </ImageView>
+      <Line fx:id="Stick" endX="-95.33334350585938" endY="41.66667175292969" layoutX="218.0" layoutY="161.0" onMousePressed="#handleMousePressed" onMouseReleased="#handleMouseReleased" startX="-95.33334350585938" startY="41.66667175292969" strokeWidth="3.0" />
+      <Label fx:id="Score" layoutX="178.0" layoutY="12.0" prefHeight="31.0" prefWidth="91.0" />
+      <Button layoutX="30.0" layoutY="59.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #14e6df;" text="Back" textFill="#eaf4f3">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="Cherry" fitHeight="25.0" fitWidth="35.0" layoutX="409.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Cherry.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="cherrycount" layoutX="396.0" layoutY="14.0" prefHeight="25.0" prefWidth="25.0" />
+      <Label fx:id="Instruct" layoutX="69.0" layoutY="90.0" prefHeight="63.0" prefWidth="320.0" textFill="#14b1ab">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="27.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToScene1" style="-fx-background-color: #14e6df;" text="Pause" textFill="#eaf4f3">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
